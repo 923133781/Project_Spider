@@ -14,7 +14,7 @@
 
 ## 二、总体设计
 
-![image-20200613103658160](/home/wch/.config/Typora/typora-user-images/image-20200613103658160.png)
+**互联网**- ----> **爬虫系统** ------> **数据库**
 
 总体的设计流程是：
 
@@ -32,9 +32,32 @@
 
 
 
+## 三、系统设计
 
+1. 系统总体设计
 
+![image-20200613112023279](/home/wch/Software/Spider/Program_Spider/md_picture/1.png)
 
+2. 控制器的设计
 
+![image-20200613112730754](/home/wch/Software/Spider/Program_Spider/md_picture/image-20200613112730754.png)
 
+控制器由四个模块组成
 
+（1）配置文件处理模块：从配置文件读取配置项，提起配置项的提取接口
+
+（2）URL维护模块：负责维护URL库，提供如下的功能
+
+​		a) 输入新的URL
+
+​		b) 输出一个未被抓取的URL
+
+​		c) 负责维护URL的抓取状态
+
+（3）任务调度模块
+
+​		a) 负责协调控制器的流程
+
+​		b) 负责调用其它的模块完成工作
+
+（4）维护URL列表的数据结构
