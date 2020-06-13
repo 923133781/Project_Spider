@@ -36,7 +36,7 @@
 
 1. 系统总体设计
 
-![image-20200613112023279](/home/wch/Software/Spider/Program_Spider/md_picture/1.png)
+![image-20200613112023279](https://github.com/923133781/Project_Spider/blob/master/md_picture/1.png)
 
 2. 控制器的设计
 
